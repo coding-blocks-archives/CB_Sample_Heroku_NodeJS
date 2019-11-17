@@ -7,7 +7,7 @@ app.get('/addtask', async (req, res) => {
   res.redirect('/tasks')
 })
 
-app.get('/tasks', (req, res) => {
+app.get('/tasks', async (req, res) => {
   const tasks =  await Tasks.findAll()
   res.send(tasks.map(t => ` task = ${t.name} \n`))
 })
