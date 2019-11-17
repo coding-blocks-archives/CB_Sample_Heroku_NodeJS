@@ -8,8 +8,8 @@ if (process.env.CLEARDB_DATABASE_URL) {
   db = new Sequelize({
     host: 'localhost',
     database: 'testdb',
-    username: '...',
-    password: '...'
+    username: 'testuser',
+    password: 'testpass'
   })
 }
 
